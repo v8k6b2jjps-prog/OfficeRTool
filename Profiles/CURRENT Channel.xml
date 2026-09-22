@@ -1,0 +1,90 @@
+
+<!-- 
+  name       = name of profile / Name of Package
+  action     = [1,Download] [2,local install] [3,online install]
+  version    = 'Auto' / Custom Version [Download & Online]
+  channel    = Offical Channels / 'Auto' [LOCAL]
+  Products   = Full package / single Apps
+  Exclude    = Exclude List [Optional]
+  P_Type     = Full ? Single ?
+  Location   = 'Online' [Online] / Real Path [LOCAL]
+  Language   = 'Auto' [LOCAL] / Language List
+  lang_pack  = Language Pack List [Online] [Optional]
+  proof_tool = Proof    Pack List [Online] [Optional]
+  System     = 'Auto'/'x86'/'AMD64'/'IA64' [Download]
+ -->
+ 
+<!-- 
+Type     => Single
+Products => 'VisioPro|VisioPro2019|VisioPro2021|ProjectPro|ProjectPro2019|ProjectPro2021|Word|Word2019|Word2021|Excel|
+Excel2019|Excel2021|PowerPoint|PowerPoint2019|PowerPoint2021|Access|Access2019|Access2021|Outlook|Outlook2019|Outlook2021|
+Publisher|Publisher2019|Publisher2021|OneNote|OneNote2021Retail|SkypeForBusiness|SkypeForBusiness2019|SkypeForBusiness2021'
+ -->
+ 
+<!-- 
+Type     => Full
+Products => VisioPro|VisioPro2019|VisioPro2021|ProjectPro|ProjectPro2019|ProjectPro2021|Mondo|ProPlus|ProPlus2019|ProPlus2021|
+O365ProPlus|O365Business|O365HomePrem
+ -->
+ 
+<!-- 
+Exclude List: [[ optional ]]
+Products => Word|Excel|PowerPoint|Access|Outlook|Publisher|OneNote|Skype|OneDrive|Bing|Visio|Project
+ -->
+ 
+<!-- 
+Channel List:
+Current, CurrentPreview, BetaChannel, MonthlyEnterprise
+SemiAnnual, SemiAnnualPreview, PerpetualVL2019, PerpetualVL2021
+DogfoodDevMain
+ -->
+ 
+<!-- 
+Language List:
+af-za|sq-al|am-et|ar-sa|hy-am|as-in|az-latn-az|bn-bd|bn-in|eu-es|be-by|bs-latn-ba|bg-bg|ca-es-valencia|ca-es|zh-cn|
+zh-tw|hr-hr|cs-cz|da-dk|prs-af|nl-nl|en-GB|en-us|et-ee|fil-ph|fi-fi|fr-CA|fr-fr|gl-es|ka-ge|de-de|el-gr|gu-in|ha-Latn-NG|
+he-il|hi-in|hu-hu|is-is|ig-NG|id-id|ga-ie|it-it|ja-jp|kn-in|kk-kz|km-kh|sw-ke|rw-RW|kok-in|ko-kr|ky-kg|lv-lv|lt-lt|lb-lu|
+mk-mk|ms-my|ml-in|mt-mt|mi-nz|mr-in|mn-mn|ne-np|nn-no|nb-no|or-in|ps-AF|fa-ir|pl-pl|pt-br|pt-pt|pa-in|quz-pe|ro-ro|rm-CH|
+ru-ru|tn-ZA|gd-gb|sr-cyrl-ba|sr-cyrl-rs|sr-latn-rs|nso-ZA|sd-arab-pk|si-lk|sk-sk|sl-si|es-es|es-MX|sv-se|ta-in|tt-ru|te-in|
+th-th|tr-tr|tk-tm|uk-ua|ur-pk|ug-cn|uz-latn-uz|vi-vn|cy-gb|wo-SN|yo-NG|xh-ZA|zu-ZA
+ -->
+
+<Settings>
+
+  <Download
+	name       = "Pro Plus Full Package"
+	action     = "1"
+	version    = "Auto"
+	channel    = "Current"
+	Location   = "c:\users\%username%\Desktop"
+	Language   = "ar-sa,he-il,ru-ru,en-us"
+	System     = "Auto"
+  />
+  
+  <Local
+	name       = "Pro_Plus_Full_Package"
+	action     = "2"
+	version    = "Auto"
+	channel    = "Auto"
+	Products   = "ProPlus"
+	Exclude    = "Access,Outlook,Publisher,Skype,OneNote,OneDrive"
+	P_Type     = "Full"
+	Location   = "c:\users\%username%\Desktop"
+	Language   = "Auto"
+  />
+  
+  <Online
+	name       = "Pro Plus Full Package"
+	action     = "3"
+	version    = "Auto"
+	channel    = "Current"
+	Products   = "ProPlus"
+	Exclude    = "Access,Outlook,Publisher,Skype,OneNote,OneDrive"
+	P_Type     = "Full"
+	Location   = "Online"
+	Language   = "ar-sa,he-il,ru-ru,en-us"
+	lang_pack  = "ar-sa,he-il,ru-ru,en-us"
+	proof_tool = "ar-sa,he-il,ru-ru,en-us"
+  />
+  
+</Settings>
