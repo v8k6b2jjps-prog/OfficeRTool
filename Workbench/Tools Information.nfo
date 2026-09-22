@@ -1,0 +1,57 @@
+
+==================================================================
+                           Troubleshoot Section
+==================================================================
+
+  * Troubleshoot (By MAS)
+    - Custom troubleshooting scripts designed by MAS for quick fixes.
+  
+  * Activation Reset
+    - Reset activation to start fresh and resolve licensing issues.
+  
+  * wmi_soft_repair
+    - Soft repair for WMI-related problems, focusing on restoring functionality.
+  
+  * wmi_hard_repair
+    - A more aggressive WMI repair for persistent issues.
+
+==================================================================
+                            Clean Section
+==================================================================
+
+  * OffScrubc2r
+    - A powerful cleanup tool for Office installation remnants.
+    - Available in **PS1** or **VBS** versions, choose your preferred script type.
+
+==================================================================
+                           Installer Section
+==================================================================
+
+  * Office_Offline_Install
+    - A robust **Offline Installer** for installing Office without an internet connection.
+    - Simply copy to any local folder and run for a seamless offline setup experience.
+
+  * Online_Offline_Install
+    - A straightforward **Online Installer** for Office installation.
+    - Requires an active internet connection for the entire setup process.
+
+==================================================================
+                           license Section
+==================================================================
+	
+  * License_installer
+    - A straightforward license Installer script
+
+  * cleanospp
+    - A Tool to clean all Office 16.X license's
+
+==================================================================
+                        Activator's Section
+==================================================================
+  * Ohook-LicenseTool
+    - A reliable tool for activation, designed to streamline the process.
+  
+  * TSForge-LicenseTool
+    - A comprehensive license management tool for more advanced activation needs.
+
+==================================================================
